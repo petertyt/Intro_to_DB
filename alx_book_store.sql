@@ -4,11 +4,12 @@ CREATE DATABASE IF NOT EXISTS alx_book_store;
 -- USE DATABASE
 USE alx_book_store;
 
--- TABLE: AUTHORS
-CREATE TABLE AUTHORS (
-    author_id INT AUTO_INCREMENT PRIMARY KEY,
-    author_name VARCHAR(215) NOT NULL
+-- Create the Authors table
+CREATE TABLE IF NOT EXISTS Authors (
+    author_id INT PRIMARY KEY,
+    author_name VARCHAR(215)
 );
+
 
 -- TABLE: BOOKS
 CREATE TABLE BOOKS (
