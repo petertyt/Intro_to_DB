@@ -1,3 +1,9 @@
+-- CREATE DATABASE
+CREATE DATABASE IF NOT EXISTS alx_book_store;
+
+-- USE DATABASE
+USE alx_book_store;
+
 -- Create the Authors table
 CREATE TABLE IF NOT EXISTS Authors (
     author_id INT PRIMARY KEY,
@@ -39,3 +45,4 @@ CREATE TABLE IF NOT EXISTS Order_Details (
     FOREIGN KEY (order_id) REFERENCES Orders(order_id),
     FOREIGN KEY (book_id) REFERENCES Books(book_id)
 );
+
